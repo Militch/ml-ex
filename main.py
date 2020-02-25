@@ -84,11 +84,11 @@ if __name__ == '__main__':
     x = xy[0]
     y = xy[1]
     r = gradient_descent_multi(x, y, 0.01)
-    nx = np.linspace(4, 30, 10000)
+    nx = np.linspace(1, 30, 10000)
     ny = hypothesis(r[0], r[1], nx)
-    plt.title("City population vs Profit")
+    plt.title("City population vs Profit [main]")
     plt.xlabel("Population of City in 10,000s")
     plt.ylabel("Profit in $10,000s")
-    plt.plot(x, y, "ob")
-    plt.plot(nx, ny, '.r')
+    plt.plot(x, y, ".b")
+    plt.plot(nx, ny, 'r')
     plt.show()
